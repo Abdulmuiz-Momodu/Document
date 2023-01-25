@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 500;
+    background-color: rgb(197, 197, 197);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h5 {
+    font-size: xx-large;
+}
+
+.letter h6 {
+    text-align: center;
+}
+
+h6 {
+    font-size: large;
+    color: rgb(116, 76, 180);
+}
+
+.prof {
+    background-image: url(/images/profile.png);
+}
+
+.serv {
+    background-image: url(/images/services.jpeg);
+}
+
+.sco {
+    background-image: url(/images/scope.jpeg);
+}
+
+.CI {
+    background-image: url(/images/CandI.png);
+}
+
+.app {
+    background-image: url(/images/approach.jpeg);
+}
+
+.part {
+    background-image: url(/images/partner.jpeg);
+}
+
+.fir {
+    background-image: url(/images/firms.jpeg);
+}
+
+.fe {
+    background-image: url(/images/fee.png);
+}
+
+.conc {
+    background-image: url(/images/conclusion.jpeg);
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    gap: 1rem;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+ul p {
+    color: rgb(116, 76, 180);
+    font-weight: 900;
+    font-size: large;
+    padding-left: 1rem;
+}
+
+li {
+    padding-left: 2rem;
+    line-height: 1.5rem;
+}
+
+li p {
+    padding-left: 1rem;
+}
+
+table {
+    border: 1px solid;
+    width: 50%;
+    padding: 1rem;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+caption {
+    font-weight: 900;
+}
+
+caption:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#profile, #scope, #CandI, #approach, #partner, #fee, #conclusion, #firms  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 2rem;
+}
+
+.one {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "img p-one"
+    "img p-two" ;
+    width: 85%;
+    align-items: center;
+    gap: 1rem;
+}
+
+img {
+    grid-area: img;
+    width: 10rem;
+    border-radius: 2rem;
+}
+
+.p-one {
+    grid-area: p-one;
+}
+
+.p-two {
+    grid-area: p-two;
+}
+
+.two {
+    width: 85%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "img Aa"
+    "img Bb"
+    "img Cc"
+    "img Dd" ;
+    gap: 1rem;
+    align-items: center;
+}
+
+.three {
+    width: 85%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "img Dt" ;
+    gap: 1rem;
+    align-items: center;
+}
+
+.text > p {
+    text-align: center;
+}
+
+
+@media screen and (max-width:800px) {
+
+    .one, .two, .three {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #firms {
+        height: fit-content;
+        padding: .5rem;
+    }
+
+    .text > p {
+        text-align: left;
+    }
+
+    .text {
+        padding-left: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    ul p, li, li p {
+        padding-left: .5rem;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    #CandI, #fee {
+        text-align: center;
+    }
+
+    #profile, #scope, #CandI, #approach, #partner, #fee, #conclusion, #firms {
+        padding: .5rem;
+    }
+
+    #profile, #CandI, #approach, #partner, #fee, #conclusion {
+        height: fit-content;
+    }
+
+}
