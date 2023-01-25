@@ -15,6 +15,11 @@ body{
     background-color: rgb(197, 197, 197);
 }
 
+#back {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
 a {
     text-decoration: none;
     color: #000;
@@ -31,42 +36,6 @@ h5 {
 h6 {
     font-size: large;
     color: rgb(116, 76, 180);
-}
-
-.prof {
-    background-image: url(/images/profile.png);
-}
-
-.serv {
-    background-image: url(/images/services.jpeg);
-}
-
-.sco {
-    background-image: url(/images/scope.jpeg);
-}
-
-.CI {
-    background-image: url(/images/CandI.png);
-}
-
-.app {
-    background-image: url(/images/approach.jpeg);
-}
-
-.part {
-    background-image: url(/images/partner.jpeg);
-}
-
-.fir {
-    background-image: url(/images/firms.jpeg);
-}
-
-.fe {
-    background-image: url(/images/fee.png);
-}
-
-.conc {
-    background-image: url(/images/conclusion.jpeg);
 }
 
 #services {
@@ -237,6 +206,7 @@ img {
 
     #profile, #scope, #CandI, #approach, #partner, #fee, #conclusion, #firms {
         padding: .5rem;
+        justify-content: start;
     }
 
     #profile, #CandI, #approach, #partner, #fee, #conclusion {
